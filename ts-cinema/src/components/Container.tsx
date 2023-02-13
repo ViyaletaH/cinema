@@ -9,6 +9,7 @@ const Container = (children: ContainerProps) => {
   return (
     <div className='container'>
         <Functional/>
+        <div className="footer"></div>
     </div>
   )
 }
