@@ -10,7 +10,7 @@
 .functional {
     border-radius: 20px;
     width: 80%;
-    height: -webkit-fit-content;
+    height: auto !important;
     margin-top: 3rem;
     margin-left: 10%;
     margin-right: 10%; 
@@ -58,7 +58,7 @@ input[type="text"], textarea {
     border: none;
     border-radius: 10px;
     width: 60%;
-    height: 30%;
+    height: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -78,7 +78,7 @@ input[type="text"], textarea {
     background-color: #9F73AB;
     border: none;
     border-radius: 10px;
-    height: 40%;
+    height: 3rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #fff;
     font-weight: 400;
@@ -90,13 +90,14 @@ input[type="text"], textarea {
 
 .separator {
     background-color: #474E68;
-    height: 20%;
+    min-height: 5rem;
 }
 
 .donate-popular {
     height: 40%;
     display: flex;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .donate {
@@ -105,7 +106,7 @@ input[type="text"], textarea {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.7rem;
     font-weight: 600;
-    color: #ff6fffb5;
+    color: #ff6fffe7;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
@@ -113,13 +114,44 @@ input[type="text"], textarea {
     height: 50%;
     margin-left: 2%;
     background-color:#495579;
+    z-index: 98;
     /* box-shadow: 0px 0px 2.5px 5px #383e51b5; */
     box-shadow: inset 0px 0px 2.5px 5px #626b87b5;
-
 }
 
 .donate:hover {
     cursor: pointer;
+}
+
+.shine {
+    width: 8rem;
+    height: 2rem;
+    position: absolute;
+    z-index: 99;
+    border-radius: 50%;
+    animation: shining 2s linear infinite;
+}
+
+@keyframes shining {
+    0% {
+      box-shadow: 10px 10px 50px #e355ff, -15px -15px 45px #e355ff;
+    }
+  
+    30% {
+      box-shadow: 10px 10px 50px #55ccff, -15px -15px 45px #55ccff;
+    }
+  
+    70% {
+      box-shadow: 10px 10px 50px #fced45, -15px -15px 45px #fced45;
+    }
+  
+    100% {
+      box-shadow: 10px 10px 50px #e355ff, -15px -15px 45px #e355ff;
+    }
+  }
+
+.donuts {
+    z-index: 100;
 }
 
 .popular {
@@ -129,9 +161,11 @@ input[type="text"], textarea {
 }
 
 .filters-series {
-    height: 65%;
-    border: solid 1px crimson;
+    background-color: #474E68;
+}
 
+.year {
+    height: 100px;
 }
 
 .footer {

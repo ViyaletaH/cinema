@@ -1,25 +1,35 @@
-import React from 'react'
+import React, {FormEvent} from 'react'
 import './myStyles.css'
+
+// import { FormEvent } from 'react';
+
+function handleYearInputChange(event: FormEvent<HTMLInputElement>) {
+  const yearInput = event.currentTarget;
+  const yearOutput = document.getElementById('ynum');
+  if (yearOutput) {
+    yearOutput.textContent = yearInput.value;
+  }
+}
 
 const FiltersSeries = () => {
   return (
     <div className="filters-series"><div className="filters">
     <div className="type">
-      <button type="button" className="rent">For a rent</button>
+      <button type="button" className="rent">htmlFor a rent</button>
       <button type="button" className="buy">To buy</button>
     </div>
     <div className="city">
       <div className="bang">
         <div className="bang-choice"><input type="radio" name="cities" id="bangCh"/></div>
-        <div className="bang-name"><label for="bang">Bangkok</label></div>
+        <div className="bang-name"><label htmlFor="bang">Bangkok</label></div>
       </div>
       <div className="saigon">
         <div className="saigon-choice"><input type="radio" name="cities" id="saigonCh"/></div>
-        <div className="saigon-name"><label for="saigon">Ho Chi Min</label></div>
+        <div className="saigon-name"><label htmlFor="saigon">Ho Chi Min</label></div>
       </div>
       <div className="singapore">
         <div className="sing-choice"><input type="radio" name="cities" id="singCh"/></div>
-        <div className="sing-name"><label for="sing">Singapore</label></div>
+        <div className="sing-name"><label htmlFor="sing">Singapore</label></div>
       </div>
     </div>
     <div className="rooms">
@@ -37,23 +47,23 @@ const FiltersSeries = () => {
     <div className="furniture">
       <legend>Furniture:</legend>
       <div className="fur-yes"><input type="radio" id="fur-y" name="furniture" value="fur-y" className="y-choice"/>
-        <label for="fur-y" className="fur-y">Yes</label></div>
+        <label htmlFor="fur-y" className="fur-y">Yes</label></div>
       <div className="fur-no"><input type="radio" id="fur-n" name="furniture" value="fur-n" className="n-choice"/>
-        <label for="fur-n" className="fur-n">No</label></div>
+        <label htmlFor="fur-n" className="fur-n">No</label></div>
 
     </div>
     <div className="year">
-      <div className="y-range-num">
-        <output className="y-num" id="ynum">all</output>
-        <input type="range" name="year" min="2012" max="2021" className="year-range" value="1" id="year" oninput="ynum.value = year.value"/>
-      </div>
-      <label for="year" className="y-label">Year</label>
+    <div className="y-range-num">
+    <output className="y-num" id="ynum">all</output>
+    <input type="range" name="year" min="2012" max="2021" className="year-range"  id="year" onInput={handleYearInputChange}/>
+  </div>
+  <label htmlFor="year" className="y-label">Year</label>
     </div>
     <div className="price">
       <div className="p-range-num">
         <div id="price"></div>
       </div>
-      <label for="price" className="p-label">Price</label>
+      <label htmlFor="price" className="p-label">Price</label>
     </div>
     <div className="clear">
       <button type="button" className="clear-btn">Clear filters</button>

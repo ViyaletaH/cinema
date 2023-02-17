@@ -16,12 +16,14 @@ const Functional = () => {
       <div className='separator'></div>
       <div className="donate-popular">
       <div className='donate'>
-          <img src={require("./images/donuts.png")} alt="logo" width="180px"/>
+          <div className='shine'></div>
+          <img src={require("./images/donuts.png")} alt="donate" width="180px" className='donuts'/>
           <span className="donate-why">На аренду сервера</span>
         </div>
         <div className='popular'>popular. automatic scroll</div>
       </div>
       <FiltersSeries/>
+      <div className='about'></div>
     </div>
   ) 
 }
