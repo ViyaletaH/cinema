@@ -1,5 +1,6 @@
 import React, { FormEvent } from "react";
 import "./myStyles.css";
+import Series from "./Series";
 
 function handleYearInputChange(event: FormEvent<HTMLInputElement>) {
   const yearInput = event.currentTarget;
@@ -22,28 +23,69 @@ const FiltersSeries = () => {
           </button>
         </div>
         <div className="country">
-          <div className="bang">
-            <div className="bang-choice">
-              <input type="radio" name="cities" id="bangCh" />
+          <span>Страна производства</span>
+          <div className="thailand">
+            <div className="thai-choice">
+              <input type="radio" name="countries" id="thaiCh" />
             </div>
-            <div className="bang-name">
-              <label htmlFor="bang">Bangkok</label>
-            </div>
-          </div>
-          <div className="saigon">
-            <div className="saigon-choice">
-              <input type="radio" name="cities" id="saigonCh" />
-            </div>
-            <div className="saigon-name">
-              <label htmlFor="saigon">Ho Chi Min</label>
+            <div className="thai-name">
+              <label htmlFor="thai">Таиланд</label>
             </div>
           </div>
-          <div className="singapore">
-            <div className="sing-choice">
-              <input type="radio" name="cities" id="singCh" />
+          <div className="korea">
+            <div className="kor-choice">
+              <input type="radio" name="countries" id="korCh" />
             </div>
-            <div className="sing-name">
-              <label htmlFor="sing">Singapore</label>
+            <div className="kor-name">
+              <label htmlFor="kor">Южная Корея</label>
+            </div>
+          </div>
+          <div className="japan">
+            <div className="jap-choice">
+              <input type="radio" name="countries" id="japCh" />
+            </div>
+            <div className="jap-name">
+              <label htmlFor="jap">Япония</label>
+            </div>
+          </div>
+          <div className="thailand">
+            <div className="thai-choice">
+              <input type="radio" name="countries" id="thaiCh" />
+            </div>
+            <div className="thai-name">
+              <label htmlFor="thai">Филиппины</label>
+            </div>
+          </div>
+          <div className="thailand">
+            <div className="thai-choice">
+              <input type="radio" name="countries" id="thaiCh" />
+            </div>
+            <div className="thai-name">
+              <label htmlFor="thai">Вьетнам</label>
+            </div>
+          </div>
+          <div className="thailand">
+            <div className="thai-choice">
+              <input type="radio" name="countries" id="thaiCh" />
+            </div>
+            <div className="thai-name">
+              <label htmlFor="thai">Сингапур</label>
+            </div>
+          </div>
+          <div className="thailand">
+            <div className="thai-choice">
+              <input type="radio" name="countries" id="thaiCh" />
+            </div>
+            <div className="thai-name">
+              <label htmlFor="thai">Тайвань</label>
+            </div>
+          </div>
+          <div className="thailand">
+            <div className="thai-choice">
+              <input type="radio" name="countries" id="thaiCh" />
+            </div>
+            <div className="thai-name">
+              <label htmlFor="thai">Китай</label>
             </div>
           </div>
         </div>
@@ -63,12 +105,12 @@ const FiltersSeries = () => {
             />
           </div>
           <label htmlFor="year" className="y-label">
-            Year
+            год выпуска
           </label>
         </div>
         <div className="clear">
           <button type="button" className="clear-btn">
-            Clear filters
+            Сброс фильтров
           </button>
         </div>
       </div>
@@ -93,7 +135,7 @@ const FiltersSeries = () => {
             </div>
           </div>
         </div>
-        <div className="series"></div>
+        <Series/>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@
     margin-top: 3rem;
     margin-left: 10%;
     margin-right: 10%; 
-    margin-bottom: 3rem;
+    margin-bottom: 0.7rem;
     background-color: #404258;
     box-shadow: 0px 0px 10px 20px rgba(0, 1, 6, 0.81);
     display: flex;
@@ -24,7 +24,6 @@
 }
 
 .filters-series, .search-login, .footer, .donate-popular {
-    /* border: solid 1px crimson; */
     width: 100%;
 }
 
@@ -40,13 +39,15 @@
 }
 
 .logo-name {
-    /* border: solid 1px crimson; */
     width: fit-content;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    font-family: 'Creepster', cursive;
+    font-weight: 500;
+    font-size: 22px;
 }
 
 .logo-name:hover {
@@ -74,17 +75,6 @@ input[type="text"], textarea {
     color: #c974e193; 
   }
 
-/* .entry {
-    background-color: #9F73AB;
-    border: none;
-    border-radius: 10px;
-    height: 3rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #fff;
-    font-weight: 400;
-    
-} */
-
 .entry {
   background: #495579;
   border-radius: 999px;
@@ -92,7 +82,7 @@ input[type="text"], textarea {
   box-sizing: border-box;
   color: #c974e1; 
   cursor: pointer;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Creepster', cursive;
   font-weight: 300;
   width: 7rem;
   border: 0;
@@ -120,24 +110,29 @@ input[type="text"], textarea {
 .donate {
     display: flex;
     flex-direction: column;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.7rem;
-    font-weight: 600;
+    font-family: 'Creepster', cursive;
+    font-size: 0.9rem;
+    font-weight: 400;
     color: #ff6fffe7;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
     position: sticky;
     height: 50%;
-    margin-left: 2%;
+    margin-left: 2.5%;
     background-color:#495579;
     z-index: 98;
-    /* box-shadow: 0px 0px 2.5px 5px #383e51b5; */
     box-shadow: inset 0px 0px 2.5px 5px #626b87b5;
 }
 
 .donate:hover {
     cursor: pointer;
+}
+
+.donate-why {
+    position: absolute;
+    z-index: 101;
+    top: 85%;
 }
 
 .shine {
@@ -193,6 +188,7 @@ input[type="text"], textarea {
 
 .variants {
     display: flex;
+    flex-direction: column;
     border: solid 1px crimson;
     width: fit-content;
     width: 70%;
@@ -204,8 +200,10 @@ input[type="text"], textarea {
 
 .about {
     display: flex;
+    justify-content: center;
+    align-items: center;
     border: solid 1px crimson;
-    height: 10px;
+    height: 3rem;
 }
 
 .footer {
@@ -237,4 +235,26 @@ input[type="text"], textarea {
 
 .series {
     width: 100%;
+}
+
+.vkontakte {
+    mask: url(./images/vk.png) center/contain;
+    -webkit-mask: url(./images/vk.png) center/contain;
+    display: inline-block;
+    background-color: #c974e193;
+    height: 40px;
+    width: 40px;
+}
+
+.telegram {
+    mask: url(./images/telegram.png) center/contain;
+    -webkit-mask: url(./images/telegram.png) center/contain;
+    display: inline-block;
+    background-color: #c974e193;
+    height: 40px;
+    width: 40px;
+}
+
+.report {
+    color: #c974e193;
 }
