@@ -74,7 +74,7 @@ input[type="text"], textarea {
     color: #c974e193; 
   }
 
-.entry {
+/* .entry {
     background-color: #9F73AB;
     border: none;
     border-radius: 10px;
@@ -82,6 +82,23 @@ input[type="text"], textarea {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #fff;
     font-weight: 400;
+    
+} */
+
+.entry {
+  background: #495579;
+  border-radius: 999px;
+  box-shadow: inset #626b87b5 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #c974e1; 
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  width: 7rem;
+  border: 0;
+  border: none;
+  border-radius: 15px;
+  height: 3rem;
 }
 
 .entry:hover {
@@ -162,14 +179,62 @@ input[type="text"], textarea {
 
 .filters-series {
     background-color: #474E68;
+    display: flex;
+    justify-content: space-around;
+    height: auto !important;
+}
+
+.filters {
+    border: solid 1px crimson;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.variants {
+    display: flex;
+    border: solid 1px crimson;
+    width: fit-content;
+    width: 70%;
 }
 
 .year {
     height: 100px;
 }
 
-.footer {
-    min-height: 8%;
-    margin-bottom: 2%;
+.about {
+    display: flex;
+    border: solid 1px crimson;
+    height: 10px;
 }
 
+.footer {
+    min-height: 8%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+.github {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+
+.type, .year, .country, .clear, .subfilters, .subparams, .subsorter, .series {
+
+    border: solid 1px crimson;
+
+}
+
+.subfilters {
+    width: 100%;
+}
+
+.series {
+    width: 100%;
+}

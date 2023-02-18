@@ -1,3 +1,4 @@
+import Footer from './Footer'
 import Functional from './Functional'
 import './myStyles.css'
 
@@ -9,7 +10,7 @@ const Container = (children: ContainerProps) => {
   return (
     <div className='container'>
         <Functional/>
-        <div className="footer"></div>
+        <Footer/>
     </div>
   )
 }

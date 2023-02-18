@@ -1,5 +1,4 @@
 import './App.css';
-import React from 'react';
 import Container from './components/Container'
 import Functional from './components/Functional';
 
