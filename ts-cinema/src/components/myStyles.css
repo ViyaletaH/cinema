@@ -202,8 +202,8 @@ input[type="text"], textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 1px crimson;
-    height: 3rem;
+    height: 6rem;
+    flex-direction: column;
 }
 
 .footer {
@@ -213,14 +213,14 @@ input[type="text"], textarea {
     justify-content: center;
     align-items: flex-end;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #fff;
+    color: #c974e193;
     font-size: 0.7rem;
 }
 
 .github {
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #fff;
+    color: #c974e193;
 }
 
 .type, .year, .country, .clear, .subfilters, .subparams, .subsorter, .series {
@@ -237,6 +237,18 @@ input[type="text"], textarea {
     width: 100%;
 }
 
+.about-container {
+    width: 30%;
+    height: fit-content;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
 .vkontakte {
     mask: url(./images/vk.png) center/contain;
     -webkit-mask: url(./images/vk.png) center/contain;
@@ -245,16 +257,21 @@ input[type="text"], textarea {
     height: 40px;
     width: 40px;
 }
+a {
+    text-decoration: none;
+}
 
 .telegram {
     mask: url(./images/telegram.png) center/contain;
     -webkit-mask: url(./images/telegram.png) center/contain;
     display: inline-block;
     background-color: #c974e193;
-    height: 40px;
-    width: 40px;
+    height: 38px;
+    width: 38px;
 }
 
 .report {
     color: #c974e193;
 }
+
+
