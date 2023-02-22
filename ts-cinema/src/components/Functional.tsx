@@ -1,6 +1,7 @@
 import './myStyles.css'
 import FiltersSeries from './FiltersSeries'
 import About from './About'
+import Popular from './Popular'
 
 const Functional = () => {
   return (
@@ -20,7 +21,7 @@ const Functional = () => {
           <img src={require("./images/donuts.png")} alt="donate" width="180px" className='donuts'/>
           <span className="donate-why">на аренду сервера</span>
         </div>
-        <div className='popular'>popular. automatic scroll</div>
+        <Popular/>
       </div>
       <FiltersSeries/>
       <About/>
