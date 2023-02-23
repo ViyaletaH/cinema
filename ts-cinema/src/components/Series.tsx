@@ -3,11 +3,12 @@ import { mainCards } from './data/mainCards';
 import useCardsRender from './hooks/useCardsRender';
 
 const Series = () => {
-  const cont = document.querySelector('.series')!;
   return (
     <>
     <div className='series'>
-      <>lol {useCardsRender(mainCards, cont)}</>
+      <>
+      {useCardsRender(mainCards, document.querySelector('.series')!)}
+      </>
     </div>
     </>
   )

@@ -8,7 +8,7 @@ const About = () => {
         <div className="vkontakte"></div>
       </a>
       <div className="about-donate">
-        <a href="#">
+        <a href="https://yoomoney.ru/to/410011925709681/0">
           <img src={require("./images/donut2.png")} alt="logo" width="40px" />
         </a>
       </div>

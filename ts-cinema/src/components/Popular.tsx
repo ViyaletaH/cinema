@@ -7,7 +7,7 @@ function Popular() {
 
   return (
     <div className='popular'>
-              <>lol{useCardsRender(sliderCards, cont)}</>
+              <>{useCardsRender(sliderCards, cont)}</>
     </div>
   )
 }

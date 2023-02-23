@@ -3,6 +3,10 @@ import FiltersSeries from './FiltersSeries'
 import About from './About'
 import Popular from './Popular'
 
+const donateOnClickhandler = () => {
+  window.open("https://yoomoney.ru/to/410011925709681/0", "_blank")
+}
+
 const Functional = () => {
   return (
     <div className='functional'>
@@ -16,7 +20,7 @@ const Functional = () => {
       </div>
       <div className='separator'></div>
       <div className="donate-popular">
-      <div className='donate'>
+      <div className='donate' onClick={donateOnClickhandler}>
           <div className='shine'></div>
           <img src={require("./images/donuts.png")} alt="donate" width="180px" className='donuts'/>
           <span className="donate-why">на аренду сервера</span>
