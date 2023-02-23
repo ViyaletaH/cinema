@@ -1,17 +1,18 @@
 import './myStyles.css'
 import { mainCards } from './data/mainCards';
-import useCardsRender from './hooks/useCardsRender';
+
 
 const Series = () => {
   return (
-    <>
-    <div className='series'>
-      <>
-      {useCardsRender(mainCards, document.querySelector('.series')!)}
-      </>
+    <div>
+      {mainCards.map((item) => (
+        <div className='card' key={item.id}>
+          {/* <h2>{item.name}</h2>
+          <p>{item.description}</p> */}
+        </div>
+      ))}
     </div>
-    </>
-  )
+  );
 }
 
 export default Series

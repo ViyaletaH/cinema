@@ -1,4 +1,4 @@
-export const mainCards: {}[] = [    {
+export const mainCards = [    {
     id: "1",
 },
 {
