@@ -48,44 +48,44 @@ const FiltersSeries = () => {
               <label htmlFor="jap">Япония</label>
             </div>
           </div>
-          <div className="thailand">
-            <div className="thai-choice">
-              <input type="radio" name="countries" id="thaiCh" />
+          <div className="philippines">
+            <div className="phil-choice">
+              <input type="radio" name="countries" id="philCh" />
             </div>
-            <div className="thai-name">
-              <label htmlFor="thai">Филиппины</label>
-            </div>
-          </div>
-          <div className="thailand">
-            <div className="thai-choice">
-              <input type="radio" name="countries" id="thaiCh" />
-            </div>
-            <div className="thai-name">
-              <label htmlFor="thai">Вьетнам</label>
+            <div className="phil-name">
+              <label htmlFor="phil">Филиппины</label>
             </div>
           </div>
-          <div className="thailand">
-            <div className="thai-choice">
-              <input type="radio" name="countries" id="thaiCh" />
+          <div className="vietnam">
+            <div className="viet-choice">
+              <input type="radio" name="countries" id="vietCh" />
             </div>
-            <div className="thai-name">
-              <label htmlFor="thai">Сингапур</label>
-            </div>
-          </div>
-          <div className="thailand">
-            <div className="thai-choice">
-              <input type="radio" name="countries" id="thaiCh" />
-            </div>
-            <div className="thai-name">
-              <label htmlFor="thai">Тайвань</label>
+            <div className="viet-name">
+              <label htmlFor="viet">Вьетнам</label>
             </div>
           </div>
-          <div className="thailand">
-            <div className="thai-choice">
-              <input type="radio" name="countries" id="thaiCh" />
+          <div className="singapore">
+            <div className="sing-choice">
+              <input type="radio" name="countries" id="singCh" />
             </div>
-            <div className="thai-name">
-              <label htmlFor="thai">Китай</label>
+            <div className="sing-name">
+              <label htmlFor="sing">Сингапур</label>
+            </div>
+          </div>
+          <div className="taiwan">
+            <div className="tai-choice">
+              <input type="radio" name="countries" id="taiCh" />
+            </div>
+            <div className="tai-name">
+              <label htmlFor="tai">Тайвань</label>
+            </div>
+          </div>
+          <div className="china">
+            <div className="chin-choice">
+              <input type="radio" name="countries" id="chinCh" />
+            </div>
+            <div className="chin-name">
+              <label htmlFor="chin">Китай</label>
             </div>
           </div>
         </div>
