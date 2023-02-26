@@ -187,7 +187,6 @@ input[type="text"], textarea {
 }
 
 .filters {
-    border: solid 1px crimson;
     display: flex;
     flex-direction: column;
     width: 20%;
@@ -226,14 +225,72 @@ input[type="text"], textarea {
     color: #c974e193;
 }
 
-.subfilters, .subparams, .subsorter, .series {
+.subfilters, .series {
 
     border: solid 1px crimson;
 
 }
 
+.subparams {
+    height: 100%;
+    width: fit-content;
+    font-size: 14px;
+    color:#c974e193;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width:  45%;
+    height: 2px;
+    background-color: #404258;
+}
+
 .subfilters {
     width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subsorter {
+    display: flex;
+    justify-content: space-between;
+    width:fit-content;
+    align-items: center;
+    margin-right: 1%;
+}
+
+.sort {
+    width: fit-content;
+}
+
+.number {
+    width: fit-content;
+    height: fit-content;
+}
+
+select {
+    appearance: none;
+    border: none;
+    outline: none;
+    padding: 2%;
+    border-radius: 7px;
+    position: relative;
+    cursor: pointer;
+    background-color: #474E68;
+    border: solid 1px #c974e193;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color:#c974e193;
+}
+
+.sortselect {
+ width: 25ch;
 }
 
 .series {
@@ -450,3 +507,7 @@ input[type=range] {
     margin-top: -10px;
     box-shadow: -407px 0 0 400px #c974e193;
   }
+
+.subsorter {
+
+}

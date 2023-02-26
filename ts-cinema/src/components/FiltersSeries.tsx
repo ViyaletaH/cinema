@@ -117,19 +117,18 @@ const FiltersSeries = () => {
       <div className="variants">
         <div className="subfilters">
           <div className="subparams">
-            <div className="number"></div>
+            <div className="number">0 результатов</div>
           </div>
           <div className="line"></div>
           <div className="subsorter">
-            <div className="sort">Sort by</div>
             <div className="criteria">
               <form>
                 <select className="sortselect">
                   <option value="default" selected disabled>
-                    Default
+                    Как Бог на душу положит ▼
                   </option>
-                  <option value="lowest">YEAR(Newest)</option>
-                  <option value="highest">YEAR(Oldest)</option>
+                  <option value="lowest">От нового к классике</option>
+                  <option value="highest">От классики к прогрессу</option>
                 </select>
               </form>
             </div>
