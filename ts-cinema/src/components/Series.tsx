@@ -6,7 +6,7 @@ const Series = () => {
   return (
     <div>
       {mainCards.map((item) => (
-        <div className='card' key={item.id}>
+        <div className='card' key={item.cardId}>
           {/* <h2>{item.name}</h2>
           <p>{item.description}</p> */}
         </div>

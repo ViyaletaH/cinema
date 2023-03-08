@@ -1,6 +1,7 @@
 export const sliderCards = [
     {
         id: "1",
+
     },
     {
         id: "2",

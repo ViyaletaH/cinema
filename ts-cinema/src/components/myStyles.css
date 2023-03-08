@@ -225,7 +225,7 @@ input[type="text"], textarea {
     color: #c974e193;
 }
 
-.subfilters, .series {
+.series {
 
     border: solid 1px crimson;
 
