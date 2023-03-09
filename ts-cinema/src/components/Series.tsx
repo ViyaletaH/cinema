@@ -7,8 +7,7 @@ const Series = () => {
     <div>
       {mainCards.map((item) => (
         <div className='card' key={item.cardId}>
-          {/* <h2>{item.name}</h2>
-          <p>{item.description}</p> */}
+          {item.popularity}
         </div>
       ))}
     </div>

@@ -1,12 +1,7 @@
-export const sliderCards = [
-    {
-        id: "1",
+import { mainCards, Card } from './mainCards';
 
-    },
-    {
-        id: "2",
-    },
-    {
-        id: '3',
-    },
-];
+let sliderCards: Array<Card>;
+
+sliderCards = mainCards.sort((a, b) => b.popularity - a.popularity).slice(0, 9);
+
+export {sliderCards}
