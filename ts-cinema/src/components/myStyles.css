@@ -38,6 +38,15 @@
     font-weight: 600;
 }
 
+.searcher {
+    outline: none;
+}
+
+input[type=text] {
+    padding-left: 1%;
+    color: #c974e1;
+}
+
 .logo-name {
     width: fit-content;
     height: 100%;
@@ -430,11 +439,12 @@ input[type=range] {
     outline: none;
     border-radius: 15px;
 
-  }
+}
 
   input[type=range]:focus {
     outline: none;
   }
+
   
   input[type=range]::-webkit-slider-runnable-track {
     height: 8px;
@@ -508,6 +518,6 @@ input[type=range] {
     box-shadow: -407px 0 0 400px #c974e193;
   }
 
-.subsorter {
+/* .subsorter {
 
-}
+} */

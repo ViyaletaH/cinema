@@ -1,5 +1,8 @@
+
 export interface Card {
     cardId?: number,
+    runame: string,
+    engname: string,
     video: string,
     poster: string,
     genre: string,
@@ -18,12 +21,14 @@ export interface Card {
 
 
 const mainCards: Array<Card> = [    {
-    video: '',
-    poster: '',
-    genre: '',
+    runame: 'КинПорш',
+    engname: 'KinnPorsche',
+    video: 'url',
+    poster: '../images/posters/kinporsh.png',
+    genre: 'bl',
     genres: '',
-    country: '',
-    year: 2021,
+    country: 'Таиланд',
+    year: 2022,
     episodes: 0,
     length: 0,
     done: true,
@@ -32,6 +37,8 @@ const mainCards: Array<Card> = [    {
     access: true,
 },
 {
+    runame: '',
+    engname: '',
     video: '',
     poster: '',
     genre: '',
@@ -47,6 +54,8 @@ const mainCards: Array<Card> = [    {
 },
 
 {
+    runame: '',
+    engname: '',
     video: '',
     poster: '',
     genre: '',
@@ -61,6 +70,8 @@ const mainCards: Array<Card> = [    {
     access: true,
 },
 {
+    runame: '',
+    engname: '',
     video: '',
     poster: '',
     genre: '',
@@ -75,6 +86,8 @@ const mainCards: Array<Card> = [    {
     access: true,
 },
 {
+    runame: '',
+    engname: '',
     video: '',
     poster: '',
     genre: '',
@@ -90,6 +103,8 @@ const mainCards: Array<Card> = [    {
 },
 
 {
+    runame: '',
+    engname: '',
     video: '',
     poster: '',
     genre: '',
@@ -104,6 +119,8 @@ const mainCards: Array<Card> = [    {
     access: true,
 },
 {
+    runame: '',
+    engname: '',
     video: '',
     poster: '',
     genre: '',
@@ -118,6 +135,8 @@ const mainCards: Array<Card> = [    {
     access: true,
 },
 {
+    runame: '',
+    engname: '',
     video: '',
     poster: '',
     genre: '',
@@ -133,6 +152,8 @@ const mainCards: Array<Card> = [    {
 },
 
 {
+    runame: '',
+    engname: '',
     video: '',
     poster: '',
     genre: '',
@@ -147,6 +168,8 @@ const mainCards: Array<Card> = [    {
     access: true,
 },
 {
+    runame: '',
+    engname: '',
     video: '',
     poster: '',
     genre: '',
@@ -161,6 +184,8 @@ const mainCards: Array<Card> = [    {
     access: true,
 },
 {
+    runame: '',
+    engname: '',
     video: '',
     poster: '',
     genre: '',
@@ -176,6 +201,8 @@ const mainCards: Array<Card> = [    {
 },
 
 {
+    runame: '',
+    engname: '',
     video: '',
     poster: '',
     genre: '',
