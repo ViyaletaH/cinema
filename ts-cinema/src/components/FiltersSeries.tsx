@@ -134,7 +134,7 @@ const FiltersSeries = () => {
             </div>
           </div>
         </div>
-        <Series/>
+        <Series />
       </div>
     </div>
   );
