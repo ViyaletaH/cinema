@@ -5,12 +5,16 @@ import { mainCards } from './data/mainCards';
 const Series = () => {
 
   return (
-    <div>
+    <div className='series-container'>
       {mainCards.map((item) => (
         <div className='card' key={item.cardId}>
-          <div className='poster'>
+          <div className='poster' style={{  
+  backgroundImage: `url( posters/${item.poster}.png)`,
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat'
+}}>
             <div className='age'>{item.adult}</div>
-            <img alt='poster' className='poster-itself' src={`posters/${item.poster }.png`} width='50px' height='50px'/>
             <div className='stage'>{item.done}</div>
           </div>
          <div className='card-data'>
@@ -18,10 +22,10 @@ const Series = () => {
               {item.runame} | {item.engname} 
             </div>
             <div className='episodes'>Количество серий: {item.episodes}</div>
-            <div className='genre'>{item.genre}</div>
-            <div className='genres'>{item.genres}</div>
-            <div className='country'>{item.country}</div>
-            <div className='year'>{item.year}</div>
+            <div className='card-genre'>{item.genre}</div>
+            <div className='card-genres'>{item.genres}</div>
+            <div className='card-country'>{item.country}</div>
+            <div className='card-year'>{item.year}</div>
             {item.popularity}
           </div>
         </div>

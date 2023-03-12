@@ -6,7 +6,7 @@ function Popular() {
   return (
     <div className='popular'>
       {sliderCards.map((item) => (
-        <div className='card' key={item.cardId}>
+        <div className='card-popular' key={item.cardId}>
           {item.popularity}
         </div>
       ))}
