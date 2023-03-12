@@ -47,9 +47,9 @@ const mainCards: Array<Card> = [    {
     year: 2021,
     episodes: 0,
     length: 0,
-    done: true,
+    done: false,
     popularity: 10,
-    adult: true,
+    adult: false,
     access: true,
 },
 
