@@ -343,12 +343,6 @@ a {
     color: #c974e193;
 }
 
-.card {
-    border: solid 1px crimson;
-    width: 50px;
-    height: 50px;
-}
-
 .gl, .bl {
     height: 35px;
     width: 60px;
@@ -538,8 +532,7 @@ input[type=range] {
     cursor: pointer;
 }
 
-.card-popular, .card-data, .names, .episodes, .card-genre, .card-genres, .card-country, .card-year {
-    border: solid 1px crimson;
+.card-data, .names, .episodes, .card-genre, .card-genres, .card-country, .card-year {
     width: fit-content;
     height: fit-content;
 }
@@ -563,6 +556,12 @@ input[type=range] {
     color: #c8c8c8;
 }
 
+.incard-category {
+    color: #989898;
+    font-size: 15px;
+    justify-self: left;
+}
+
 .age {
     margin-left: 80%;
     margin-top: 2%;
@@ -580,3 +579,13 @@ input[type=range] {
     border-radius: 5px;
     padding: 0px 10px 0px 10px;
 }
+
+.names {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* .card-popular {
+    border:
+} */

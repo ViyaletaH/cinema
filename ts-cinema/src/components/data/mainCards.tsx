@@ -25,7 +25,7 @@ const mainCards: Array<Card> = [    {
     engname: 'KinnPorsche',
     video: 'url',
     poster: 'kinporsh',
-    genre: 'bl',
+    genre: 'BL',
     genres: 'эротика, криминал, комедия, боевик',
     country: 'Таиланд',
     year: 2022,

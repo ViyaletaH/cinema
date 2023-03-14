@@ -24,11 +24,11 @@ const Series = () => {
             <div className='names'>
               {item.runame} | {item.engname} 
             </div>
-            <div className='episodes'>Количество серий: {item.episodes}</div>
-            <div className='card-genre'>Категория: {item.genre}</div>
-            <div className='card-genres'>Жанры: {item.genres}</div>
-            <div className='card-country'>Страна производства: {item.country}</div>
-            <div className='card-year'>Год выпуска: {item.year}</div>
+            <div className='episodes'><span className='incard-category'>Количество серий:</span> {item.episodes}</div>
+            <div className='card-genre'><span className='incard-category'>Категория:</span> {item.genre}</div>
+            <div className='card-genres'><span className='incard-category'>Жанры:</span> {item.genres}</div>
+            <div className='card-country'><span className='incard-category'>Страна производства:</span> {item.country}</div>
+            <div className='card-year'><span className='incard-category'>Год выпуска:</span> {item.year}</div>
             {item.popularity}
           </div>
         </div>
