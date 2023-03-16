@@ -180,7 +180,6 @@ input[type="text"], textarea {
 }
 
 .popular {
-    border: solid 1px crimson;
     width: 70%;
     margin-left: 5%;
     display: flex;
@@ -204,7 +203,6 @@ input[type="text"], textarea {
 .variants {
     display: flex;
     flex-direction: column;
-    border: solid 1px crimson;
     width: fit-content;
     width: 70%;
 }
@@ -232,12 +230,6 @@ input[type="text"], textarea {
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #c974e193;
-}
-
-.series {
-
-    border: solid 1px crimson;
-
 }
 
 .subparams {
@@ -513,7 +505,6 @@ input[type=range] {
   }
 
 .series-container {
-    border: solid 1px crimson ;
     display: flex;
     flex-wrap: wrap;
     height: 100%;
@@ -594,8 +585,8 @@ input[type=range] {
 }
 
 .card-popular:hover {
-    position:absolute;
+    margin: 10px;
     z-index: 100;
-    height: 150px;
-    width: 90px;
+    transform: scale(2);
+    background-size: contain !important;
 }

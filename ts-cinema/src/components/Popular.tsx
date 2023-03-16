@@ -19,7 +19,6 @@ function Popular() {
             backgroundColor: item.poster !== "" ? undefined : "#fff",
           }}
         >
-          {/* {item.popularity} */}
         </div>
       ))}
     </div>

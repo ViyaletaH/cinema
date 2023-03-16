@@ -17,7 +17,7 @@ const Series = () => {
 }}>
             <div className='age' style={{
               boxShadow: item.adult !== true ? 'inset 0px 0px 2px 2px #74dbe1, inset 0px 0px 5px 5px #ff55f4, inset 0px 0px 20px 20px #ff93e2' : 'inset 0px 0px 2px 2px #ff7e2e, inset 0px 0px 5px 5px #fced45, inset 0px 0px 20px 20px #ff9d15'
-            }}>{item.adult === true ? '18+' : '16+'}</div>
+            }}>{item.adult === true ? '21+' : '18+'}</div>
             <div className='stage' style={{ backgroundColor: item.done ? "#4bce09" : "#c83eef" }}>{item.done === true ? 'переведено' : 'в процессе' }</div>
           </div>
          <div className='card-data'>
@@ -29,7 +29,7 @@ const Series = () => {
             <div className='card-genres'><span className='incard-category'>Жанры:</span> {item.genres}</div>
             <div className='card-country'><span className='incard-category'>Страна производства:</span> {item.country}</div>
             <div className='card-year'><span className='incard-category'>Год выпуска:</span> {item.year}</div>
-            {item.popularity}
+            {/* {item.popularity} */}
           </div>
         </div>
       ))}
