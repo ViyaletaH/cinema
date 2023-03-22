@@ -2,11 +2,11 @@ import Footer from './Footer'
 import Functional from './Functional'
 import './myStyles.css'
 
-type ContainerProps = {
-    children: React.ReactNode
-}
+// type ContainerProps = {
+//     children: React.ReactNode
+// }
 
-const Container = (children: ContainerProps) => {
+const Container = () => {
   return (
     <div className='container'>
         <Functional/>
