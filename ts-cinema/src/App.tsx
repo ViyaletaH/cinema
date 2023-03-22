@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Container />} />
+        <Route index element={<Container />} />
         <Route path="movie" element={<Movie/>} />
         <Route path="admins" element={<Admins />} />
         <Route path="*" element={<Error404 />} />
